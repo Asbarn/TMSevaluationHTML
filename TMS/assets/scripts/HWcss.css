@@ -10,6 +10,26 @@
     font-style: normal;
 }
 
+.marginauto {
+    margin: auto;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.colorgreen {
+    color: #38c695;
+}
+
+.colorpurple {
+    color: #b27cf5;
+}
+
+.colororange {
+    color: #feb960;
+}
+
 .containermain {
     max-width: 1920px;
     width: 100%;
@@ -43,20 +63,21 @@
     display: inline-block;
 }
 
-.header-button button {
+.header-button a {
     /*  width: 10%;*/
+    padding: 0 10px;
     border: none;
     background-color: transparent;
     font: 14px 'Poppins', sans-serif;
     color: black;
 }
 
-.header-button button:focus {
+.header-button a:focus {
     outline: none;
 }
 
 .header-title {
-    max-height: 775px;
+    /* max-height: 775px;*/
     width: 100%;
     background-color: #3f4049;
 }
@@ -65,6 +86,27 @@
     text-align: center;
     padding-top: 193px;
     font: 60px 'Libre Baskerville', serif;
+    color: #ffff;
+}
+
+.header-title button {
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 25px;
+    background-color: #fc5f45;
+    color: white;
+    margin-top: 64px;
+    font: 14px 'Libre Baskerville', serif;
+}
+
+.header-title button:focus {
+    outline: none;
+}
+
+.header-title button:hover {
+    transition: all 1s;
+    background-color: orangered;
 }
 
 @media (max-width: 960px) {
@@ -125,4 +167,53 @@
     .header-style__underlay {
         display: none;
     }
+}
+
+.header-title .icon {
+    width: 40px;
+    height: 40px;
+    /* border: 2px solid #38c695;
+    border-radius: 50%;*/
+    color: #38c695;
+    font-size: 32px;
+    display: flex;
+    margin: 83px auto 38px;
+}
+
+.header-title h4 {
+    margin: auto;
+    font: 18px 'Poppins', sans-serif;
+    padding-bottom: 157px;
+}
+
+.about {
+    padding: 146px 15px 145px 15px;
+}
+
+.gradient {
+    background: #d3bcb8;
+    height: 700px;
+    background: linear-gradient(to top, #d3bcb8, #c7c0be);
+    border: 10px solid #c7c0be;
+    font: 50px 'Poppins', serif;
+    font-weight: 500;
+    color: #948f8e;
+    padding-top: 323px;
+    text-align: center;
+}
+
+.aboutus {
+    left: auto;
+    right: 0%;
+    background-color: #ffff;
+    position: absolute;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.inlinerow {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
