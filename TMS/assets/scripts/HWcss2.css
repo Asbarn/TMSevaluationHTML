@@ -1,0 +1,83 @@
+.focus {
+    background-color: #f7f7f7;
+    padding: 160px 15px 150px 15px;
+}
+
+.focus h2 {
+    text-align: center;
+    font: 50px 'Libre Baskerville', serif;
+}
+
+.focus h6 {
+    margin-top: 45px;
+    text-align: center;
+    font: 18px 'Poppins', serif;
+    color: #616161;
+}
+
+.focus-block {
+    margin-top: 84px;
+    background-color: #ffff;
+    text-align: center;
+    padding-top: 65px;
+}
+
+.focus-block h6 {
+    margin-top: 35px;
+    font: 20px 'Poppins', serif;
+    color: black;
+    font-weight: 550;
+}
+
+.focus-uxdesign h6 {
+    margin-top: 25px;
+}
+
+.focus-photography h6 {
+    margin-top: 31px;
+}
+
+.focus-appdevelopment h6 {
+    margin-top: 34px;
+}
+
+.focus-block p {
+    margin-top: 32px;
+    font: 15px 'Poppins', serif;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+
+.focus-webdesign .coloredborder {
+    background-color: #fc5f45;
+}
+
+.focus-uxdesign .coloredborder {
+    background-color: #38c695;
+}
+
+.focus-photography .coloredborder {
+    background-color: #b27cf5;
+}
+
+.focus-appdevelopment .coloredborder {
+    background-color: #feb960;
+}
+
+.awesomeness {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+}
+
+.awesomeness iframe,
+.awesomeness object,
+.awesomeness embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

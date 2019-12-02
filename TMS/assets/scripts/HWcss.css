@@ -10,6 +10,10 @@
     font-style: normal;
 }
 
+.displaynone {
+    display: none;
+}
+
 .marginauto {
     margin: auto;
 }
@@ -79,6 +83,7 @@
 .header-title {
     /* max-height: 775px;*/
     width: 100%;
+    /* height:100vh;*/
     background-color: #3f4049;
 }
 
@@ -183,7 +188,7 @@
 .header-title h4 {
     margin: auto;
     font: 18px 'Poppins', sans-serif;
-    padding-bottom: 157px;
+    padding-bottom: 177px;
 }
 
 .about {
@@ -191,24 +196,35 @@
 }
 
 .gradient {
-    background: #d3bcb8;
     height: 700px;
-    background: linear-gradient(to top, #d3bcb8, #c7c0be);
-    border: 10px solid #c7c0be;
-    font: 50px 'Poppins', serif;
-    font-weight: 500;
-    color: #948f8e;
-    padding-top: 323px;
-    text-align: center;
+    width: 555px;
+    background-image: url(https://picsum.photos/555/700);
 }
 
 .aboutus {
-    left: auto;
-    right: 0%;
+    width: 100%;
+    position: relative;
     background-color: #ffff;
-    position: absolute;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    padding-top: 110px;
+    left: 488px;
+    box-shadow: 0 -14px 20px rgba(0, 0, 0, 0.5);
+}
+
+.aboutus h4 {
+    font: 50px 'Libre Baskerville', serif;
+    color: black;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 20px;
+}
+
+.aboutus p {
+    padding-right: 80px;
+    padding-left: 80px;
+    font: 15px 'Poppins', serif;
+    color: #8b8b8b;
 }
 
 .inlinerow {
@@ -216,4 +232,41 @@
     flex-wrap: nowrap;
     margin-right: -15px;
     margin-left: -15px;
+}
+
+.coloredborder {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin-top: 50px;
+}
+
+.coloredborder1 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: #fc5f45;
+}
+
+.coloredborder2 {
+    float: left;
+    width: 25%;
+    position: relative;
+    height: 100%;
+    background-color: #38c695;
+}
+
+.coloredborder3 {
+    float: left;
+    width: 25%;
+    position: relative;
+    height: 100%;
+    background-color: #b27cf5;
+}
+
+.coloredborder4 {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: #feb960;
 }
