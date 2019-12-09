@@ -17,3 +17,11 @@ function openPageTest(pageName, elmnt) {
     elmnt.style.outline = "none";
 
 }
+
+
+elem.onclick = function(event) {
+
+    elem.style.opacity = "0";
+    var videobanner = document.getElementById("videobanner");
+    videobanner.play();
+}

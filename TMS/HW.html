@@ -224,13 +224,20 @@
 
     <div class="background-video-ui ">
 
-        <video class="background-video__container" autoplay="" muted="" loop="" playsinline="" src="assets/videos/3FS-Tropo-Banner-1920x500-1080p.mp4"></video>
-
-        <div class="background-video__content-holder">
+        <video class="background-video" loop="" playsinline="" src="assets/videos/3FS-Tropo-Banner-1920x500-1080p.mp4" id="videobanner"></video>
+        <button type="submit" class="background_video_content" id="elem">
+        
             <h2>
                 Explore Our Awesomeness
             </h2>
-        </div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+                <image id="_" data-name="" width="80" height="80" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAJOklEQVR4nO2de5DVZRnHP5xddFbQlBZ3RYIhTBftMmUayRIWhhk2aTWI15nGsukiLa7+0WRNMdY/seAlb1FTU0ZSpjRmo4hdYLMtGMUusl2UCZHQVUjAxZF2aZ71+zKPh3N2z+V3O2f5zpw5v3P5ve/zfM97ed7ned73jJn56K2khDHAKcBbgZPc4wRgAnCUHoZ+PXYC/wH+5R5/Bf4BDKahRmPC9bUCFwLzgPeJqFIQyGwGTgbm5N1jxK4D1gD3ATuSUiiJFng08DHgEmAu0FDgOweAfwPPAM+KkD3ucyOvCXiDfoQ3AVPVivMxADwCrAR+DuyNU7k4CTwe+CLweSnusQvoBn6nZ+uGL5dZ/jh1/9lqze3AcXnfeQkwBW8Cno9GrdcjDgKtm30F+JQbw5ACPwF+CvTEMGblgJnAAuBi/YABNn6uAG4AXoi60ijL+jTQCyxy5D0mpSYDHcCjMQ34gyq7Q3UtUN1IFusNmyVjZHpHVdBp6orfAd6o99YD5wKnAz8D9kdUVynYrzpPlwzrdU+zZOyWzFUjCgI/B2wA3qvXNgks1Li0JhZ6ysMaybJQsiFZN0j2qlANgdYtfqRBukldqAtoA1YlSFCpWCXZuiRrk2S/K2+sLguVEtgC/Aa4TK93qKtcG7fZUCX2SsZ5zla8VLq0VFJ0JQROA/4AnKnXa4F36rlW8IhkfljynimdpsVNYJsG4FDRt4EPJWn5RwiT+TzpgHTq1vKyZJRD4GT9YpO0crCucLUs/1rFgHTolE6T1JMmR03gROBXKtgq+owG43rBMuAq6TZZujZHRaDNUPcDb9Pr62TV1xu+K92Qrr8sZXYuhcCbgffo+tY6a3n56HJjoul850g3jETg5cCVul6r5VC9o8NZFJeNZGwPR+AM4HZd71BhtTxhlIoB6Rosi6Xy+hREMQLNZ/dDuYwG1BKfy4yK8eM56RxWLN8v4scsSqB5U96t6+U1ZiRHhbWanREXiwqVW8gfaCbLP+UEfQp4u/xpoxE2C/8ZmC7n7FuAPs9DoRb4ZedBvnYUk4d079S1cXJ9/hfyCZwogxK521fHL2Pm8QtxgZyxE73A+QR2aNA0fHW0M+cQuDBuFvsPPIHjnc3TozDhYbyGdeLE8FlFGg8h0EKPx+p6acLE2UT1rUrcSQliuao6VlwNwRMYnKM7tfZNCuaYeEIT1kZgfkYJXC1ukBN2CIFAC1Z/QNf3AK8mKJiP5U7Qj7ekmOGaIl4VN4gr4+wggRc6gVemKGS/sg0srvxg/oyXAQRujKsLcASeq+cXXAgwDcwCnla95yiuOzNDBK53gfmh/JycfvHZenNtWllOwibgDLU+5Ny0GfALKcrkMeiWtRYqHSLwZJcl1Z26iK8N1OcD35SHeCxwi9JCxmdAvsCRuf9PMgLf5T78U0pC5WNAS0ozF3brs4WSry1l2TxHZxiBp7o3/p6CQMNhtTzDvfrODGUUXJSiTJ6jU3PyNCAvw+4iN6WJXpF4r2Swbny3UtbGpiDXbueRmZ5TsiJyYWUVJvQn1K2DV3yRFvknpiBz4GpKzqU0PJNd/oZwQBPL+W5FYElCjyvzNUkEro7PuZVApImHMeJBeYg3qQozth9S6yyU8hsHAlfH5Vzsc09ClUeBLTK6f6yyGpR9en+BNN84ELhqylWT2pUy+uUA6XDJm/NdcDxOHFDZ46JM8U0LB9KsvFG/ZC22wiZlDlzu3nsgIV9mGGtfzrmg0dHD3JA1TFNCeSBvQG73j7gZOk4ErvY1as9Gc6nZSBnAPLmVQjJ7nzbxJBm7DlztyrmMg9ZM0XQorNt8SalngbwereWTDvyfoOfnG51RODVhIcqBdZkf+FiEPDSdCW+fCJii562Nyj5Ab46rYMtV3DhFGwhnqJ69is/enZI84xyBT1kXflIvck7IrOACuY+CXL1KCE+LPCRLMP+ezLntULhEyrSR08rCPDDHSJZV8lZvTlk2z9HGnDYrh6m/PSWhPCYovTasbfcrsXNhRvagBI62m1cmJ0s+BJLOiXgDYrl4hxym5+m+ZxV7uDlFmTxy4oiQuRHIekjPzS7AlAbMOH6z6g2bYXpSlCcfs50NOJRwFAi8zzkqL0lRwKPUI76hUGtfCfckicDNQMhcCwRaPvCvdW2e3yMSFOq/7nqXlmPXZzAf+whxg7gayqH2413wrU1IOD/lDo19Xdrf+0CCdZeD+S78ezB7w6f4mrW/VdlH3SmPhVmE7eg8Wz1magjA+Ra4x21raA+R98M4yMfZur7dRy/zTRbLgdun6yWHuTuIwIVxc6P/IJ/APrcPzpJnPpqcjJmFcfB+Cbci//iUQkbzDa6Jdrmc6dGIJrc3cLe4eR0KEWit8Ou6nu6uRyOWuMyNrxWyS4st225Suq3hmhQC11nAXJeRv7HYcrIYgWbEXiHfYINOtqjoUIYaRYt0btDE8clihv1wjoPNbttDq444yVrechwIGy1DiOM6ne1VECN5Xqyg7+n6gy7Vv56xXIErtDob9nCxUlxXlgX1R11frTGxXrFYOiKdrxpJz1II7NcCPzTjpW4Xez3hSmey/EU6j7jRslTnaZ+cnNvkJV5RZy3xGuk0Rjp+uFRXWjne520aB7erIvu1ltX4xNIgHbqk03Z5nLeVWkC57vteLay36PViBbpr0cRpkezB1tsiD1RZeeKVxD+sorMUu0Az1qYaM7bnSuYw226QTk+PcN8hqDSAtEPuneCEbdU5fUszspejGMZLxjXOzlspXSo6/6uaCFxIcLRDZl9RWZ3q5guqKDcuLJBsnZL1Fcl+aTXHGkQRwrxNOcvBVjxRQfDfZiTO3C5ZVrmM/h7JfFu1hUcVA/6bxhAzPF/Ue3MUb7b46ccT3tMxVnWukwzh4O4XJeMsyVw1ogyiD8qWapPnInSL2dpnu03LpLNiCt7nVPYy1XWPi+v0S6Y2yRjZhsq4D+Lu0DhzTN5nO91B3L/X2Sz7ipRTDE06KmCWWlh7gaPlX1I3vbGWDuLORylHwQ8qIrjVHQW/V++PEVlN2sLQovSyKUVasj8K/t64t28k/W8OrUpZm6Oo36SIyt2u8S6cdVNXf0YwHOzvLyxFN/wdhuXFGKnWFc1mOxL4n1qRPcz0sL/DMIM3/CWGpefZc/IA/g+INvDE1K+TEQAAAABJRU5ErkJggg=="/>
+              </svg>
+              <h3>
+                  Click to play the video 
+                  </h3>
+        
+        </button>
     </div>
 
     <div class="portfolio ">
