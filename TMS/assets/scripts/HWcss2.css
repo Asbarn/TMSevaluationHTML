@@ -511,7 +511,7 @@
 }
 
 .pricing-content {
-    padding: 36px 15px 42px;
+    padding: 36px 0px 42px;
     text-align: center;
     font: 20px "Poppins", serif;
     background-color: #ffff;
@@ -951,4 +951,87 @@ textarea {
     outline: none;
     cursor: pointer;
     background-image: url(../images/pricing2.png) cover;
+}
+
+.first .newcoloredborder {
+    max-width: 100%;
+    height: 3px;
+    background-color: #38c695;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: -36px;
+}
+
+.second .newcoloredborder {
+    max-width: 100%;
+    height: 3px;
+    background-color: #fc5f45;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: -36px;
+}
+
+.third .newcoloredborder {
+    max-width: 100%;
+    height: 3px;
+    background-color: #b27cf5;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: -36px;
+}
+
+.first_button .coloredborder {
+    position: relative;
+    background-color: #fc5f45;
+}
+
+.second_button .coloredborder {
+    position: relative;
+    background-color: #38c695;
+}
+
+.third_button .coloredborder {
+    position: relative;
+    background-color: #b27cf5;
+}
+
+.fourth_button .coloredborder {
+    position: relative;
+    background-color: #feb960;
+}
+
+.background-video-ui {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    padding-bottom: 0px;
+}
+
+.background-video__container {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+}
+
+video {
+    object-fit: contain;
+}
+
+.background-video__content-holder {
+    position: absolute;
+    top: 150px;
+    text-align: center;
+}
+
+.background-video__content-holder h2 {
+    font: 30px "Poppins", serif;
+    color: white;
 }
